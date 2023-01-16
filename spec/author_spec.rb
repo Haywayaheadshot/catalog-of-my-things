@@ -1,13 +1,13 @@
-require './book'
+require './author'
 
-describe Book do
+describe Author do
     context 'Pass parameters through book class' do
-        new_book = Book.new('Abubakar', 'Morrison', archived: true)
-        new_book_2 = Book.new('Abubakar', 'bad')
-        new_book_3 = Book.new('Abubakar', 'Hello')
+        new_book = Author.new('Abubakar', 'Morrison', archived: true)
+        new_book_2 = Author.new('Abubakar', 'bad')
+        new_book_3 = Author.new('Abubakar', 'Hello')
 
         it 'should check for book instance' do
-            expect(new_book).to be_instance_of(Book)
+            expect(new_book).to be_instance_of(Author)
         end
 
         it 'should check for achieve override with new_book' do

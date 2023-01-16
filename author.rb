@@ -1,4 +1,4 @@
-class Book
+class Author
     attr_accessor :publisher, :cover_state
 
     def initialize(publisher, cover_state, archived: false)
