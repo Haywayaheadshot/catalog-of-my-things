@@ -19,7 +19,6 @@ require './modules/list_all_music_albums'
 require './modules/create_a_genre'
 require './modules/list_all_genres'
 
-
 class App
   attr_accessor :books_arr, :authors_arr, :labels_arr, :games_arr, :music_albums, :genre_arr
 
