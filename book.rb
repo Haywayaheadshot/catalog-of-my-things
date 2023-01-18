@@ -3,11 +3,11 @@ require './item'
 class Book < Item
   attr_accessor :publisher, :cover_state
 
-  def initialize(publisher, cover_state, archived: false)
+  def initialize(publish_date, publisher, cover_state)
+    super(publish_date)
     @publisher = publisher
     @cover_state = cover_state
     @archived = archived
-    super()
   end
 
   def can_be_archived?
