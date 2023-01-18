@@ -18,7 +18,6 @@ describe 'Check for when an object of genre is created' do
     expect(@new_genre.items.length).to eq(0)
   end
 
-
   it 'object should add item to list using add_item method' do
     @item = Item.new(12)
     @new_genre.add_item(@item)
