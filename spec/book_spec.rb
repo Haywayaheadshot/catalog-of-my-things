@@ -1,10 +1,11 @@
 require './book'
+require './item'
 
 describe Book do
   context 'Pass parameters through book class' do
-    new_book = Book.new('Abubakar', 'Morrison', archived: true)
-    new_book_two = Book.new('Abubakar', 'bad')
-    new_book_three = Book.new('Abubakar', 'Hello')
+    new_book = Book.new(11, 'Abubakar', 'Morrison')
+    new_book_two = Book.new(11, 'Abubakar', 'bad')
+    new_book_three = Book.new(2, 'Abubakar', 'Hello')
 
     it 'should check for book instance' do
       expect(new_book).to be_instance_of(Book)
@@ -22,6 +23,14 @@ describe Book do
 
     it 'should check return default false in new_book_3' do
       expect(new_book_three.can_be_archived?).to eql(false)
+    end
+
+    it 'should check publisher of new_book_three' do
+      expect(new_book_three.publisher).to eql('Abubakar')
+    end
+
+    it 'should check cover_state of new_book_three' do
+      expect(new_book_three.cover_state).to eql('Hello')
     end
   end
 end

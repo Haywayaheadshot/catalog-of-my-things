@@ -1,4 +1,5 @@
 require_relative './../author'
+require './item'
 
 describe Author do
   before :each do
@@ -30,6 +31,12 @@ describe Author do
 
     it 'object should have no item initially' do
       expect(@author.items.length).to eq(0)
+    end
+
+    it 'object should add item to list using add_item method' do
+      @item = Item.new(12)
+      @author.add_item(@item)
+      expect(@author.items.length).to eq(1)
     end
   end
 end
