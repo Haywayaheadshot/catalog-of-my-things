@@ -7,6 +7,7 @@ class Cases < App
   def initialize()
     @app = App.new
     super()
+    @app.load_stored_data
   end
 
   def on_start
