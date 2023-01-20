@@ -3,7 +3,7 @@ require './item'
 
 describe Game do
   before :each do
-    @music = MusicAlbum.new(13)
+    @music = MusicAlbum.new('1990-12-11')
   end
 
   context 'Test object creation' do
@@ -18,7 +18,7 @@ describe Game do
 
   context 'Test methods and attributes' do
     it 'object should have publish_date attribute' do
-      expect(@music.publish_date).to eq(13)
+      expect(@music.publish_date).to eq('1990-12-11')
     end
 
     it 'object should have on_spotify attribute' do
