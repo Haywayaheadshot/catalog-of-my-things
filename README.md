@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Live Video](#live-video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
 - [👥 Authors](#authors)
@@ -39,6 +40,10 @@
 
 ### Key Features <a name="key-features"></a>
 - **Database that contains information about a catalogue**
+
+### Live Video <a name="live-video"></a>
+- Click [here](https://drive.google.com/file/d/12NXPuV4G5YmCBKunUCU91HDlEXYAsty6/view?usp=sharing) to see live video.
+
 ## 💻 Getting Started <a name="getting-started"></a>
 > To get a local copy up and running, follow these steps.
 
