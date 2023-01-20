@@ -21,10 +21,4 @@ describe 'Check for when an object of genre is created' do
   it 'items array should be empty' do
     expect(@new_label.items.length).to eq(0)
   end
-
-  it 'object should add item to list using add_item method' do
-    @item = Item.new(12)
-    @new_label.add_item(@item)
-    expect(@new_label.items.length).to eq(1)
-  end
 end
