@@ -56,7 +56,9 @@ In order to run this project you need:
 ### Setup
 ```
 - To clone the repository run this command - "git clone https://github.com/Haywayaheadshot/catalog-of-my-things.git"
-- cd catalog
+- cd catalog-of-my-things
+- run "bundle install"
+- run "ruby main.rb"
 ```
 ## 👥 Authors <a name="authors"></a>
 
