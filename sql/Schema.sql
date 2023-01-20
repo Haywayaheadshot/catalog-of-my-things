@@ -49,3 +49,8 @@ CREATE TABLE genre (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     genre_name VARCHAR(250)
 );
+
+
+CREATE INDEX author_index ON author(id);
+CREATE INDEX genre_index ON genre(id);
+CREATE INDEX label_index ON label(id);
