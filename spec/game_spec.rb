@@ -3,7 +3,7 @@ require './item'
 
 describe Game do
   before :each do
-    @game = Game.new(5, true, 3)
+    @game = Game.new('1990-12-11', true, '2000-12-11')
   end
 
   context 'Test object creation' do
@@ -12,7 +12,7 @@ describe Game do
     end
 
     it 'throw an error when number of parameter is less than required' do
-      -> { Game.new(4) }.should raise_error ArgumentError
+      -> { Game.new('1990-12-11') }.should raise_error ArgumentError
     end
 
     it 'object should throw an error when no parameter is given' do
@@ -22,7 +22,7 @@ describe Game do
 
   context 'Test methods and attributes' do
     it 'object should have publish_date attribute' do
-      expect(@game.publish_date).to eq(5)
+      expect(@game.publish_date).to eq('1990-12-11')
     end
 
     it 'object should have multiplayer attribute' do
@@ -30,7 +30,11 @@ describe Game do
     end
 
     it 'object should have last_played_at attribute' do
-      expect(@game.last_played_at).to eq(3)
+      expect(@game.last_played_at).to eq('2000-12-11')
+    end
+
+    it "Move to archive method should be true'" do
+      expect(@game.can_be_archived?).to eql true
     end
   end
 end
