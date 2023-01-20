@@ -17,4 +17,37 @@ module OnStart
     puts '13 - Exit'
     puts '--------------------------------------------------'
   end
+
+  def load_stored_data
+    stored_books = Storage.load_data('book')
+    stored_authors = Storage.load_data('author')
+    stored_games = Storage.load_data('game')
+    stored_genres = Storage.load_data('genre')
+    stored_labels = Storage.load_data('label')
+    stored_music = Storage.load_data('music_album')
+
+    stored_books.each do |data|
+      @books_arr.push(data)
+    end
+
+    stored_authors.each do |data|
+      @authors_arr.push(data)
+    end
+
+    stored_games.each do |data|
+      @games_arr.push(data)
+    end
+
+    stored_genres.each do |data|
+      @genre_arr.push(data)
+    end
+
+    stored_labels.each do |data|
+      @labels_arr.push(data)
+    end
+
+    stored_music.each do |data|
+      @music_albums.push(data)
+    end
+  end
 end
