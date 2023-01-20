@@ -1,14 +1,5 @@
 <a name="readme-top"></a>
 
-<!-- <div align="center">
-
-  <img src="./images/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-
-</div> -->
-
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -66,8 +57,8 @@ In order to run this project you need:
 
 👤 **Abubakar Ummar**
 
-GitHub: [@Haywayaheadshot](https://github.com/Haywayaheadshot)
-LinkedIn: [Abubakar Ummar](https://www.linkedin.com/in/abubakar-ummar/)
+- GitHub: [@Haywayaheadshot](https://github.com/Haywayaheadshot)
+- LinkedIn: [Abubakar Ummar](https://www.linkedin.com/in/abubakar-ummar/)
 
 
 👤 **Marcos Gualtero Lourenzo**
